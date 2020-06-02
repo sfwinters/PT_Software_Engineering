@@ -1,5 +1,5 @@
 body {
-    background-color: cadetblue ;
+    background-color: cadetblue
 }
 
 h1 {
@@ -13,5 +13,10 @@ h2 {
 }
 
 h3 {
+    color:black;
     text-align: center;
+}
+nav {
+    text-align: center;
+    background-color: bisque;
 }
