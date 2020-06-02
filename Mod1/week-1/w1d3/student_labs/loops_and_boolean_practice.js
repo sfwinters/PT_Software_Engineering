@@ -20,9 +20,12 @@ for (some_num = Math.floor(Math.random() * 30); some_num < 30; some_num++) {
     };
 };
 
-let fave_day;
-function reaction(fave_day) {
-    if (fave_day === 'Saturday'){
-        console.log('I like the weekend')
-    }
+let week=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let fave_day='Friday';
+if (fave_day===week[0] || fave_day===week[6]) {
+    console.log('I like the weekend');
+} else if (fave_day===week[1] || fave_day===week[2] || fave_day===week[3] || fave_day===week[4] || fave_day===week[5]) {
+    console.log('Give me a good \'ol weekday');
+} else {
+    console.log('WTF u doin');
 }
