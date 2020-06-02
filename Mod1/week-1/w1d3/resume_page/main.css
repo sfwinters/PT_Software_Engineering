@@ -19,4 +19,5 @@ h3 {
 nav {
     text-align: center;
     background-color: bisque;
+    list-style-type: none;
 }
