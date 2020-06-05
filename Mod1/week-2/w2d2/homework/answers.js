@@ -30,7 +30,7 @@ for (i = 1; i <=100; i++) {
 };*/
 
 //Wild Wild Life
-const wolfy = ['Wolfy', 'wolf', 16, 'Yukon Territory'];
+/*const wolfy = ['Wolfy', 'wolf', 16, 'Yukon Territory'];
 const sharky = ['Sharky', 'shark', 20, 'Left Coast'];
 const plantee = ['Plantee', 'plant', 5000, 'Mordor'];
 const porgee = ['Porgee', 'Porg', 186, 'Ahch-To'];
@@ -39,4 +39,10 @@ const dart = ['D\'Art', 'Demogorgon Dog', 2, 'Upside Down'];
 plantee[2] = plantee[2] + 1;
 wolfy[3] = 'Gotham City';
 dart.push('Hawkins');
-wolfy.splice(0, 1, 'Gameboy');
+wolfy.splice(0, 1, 'Gameboy');*/
+
+//Yell at the Ninja Turtles
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (const turtlePower of turtles) {
+    console.log(turtlePower.toUpperCase());
+}
