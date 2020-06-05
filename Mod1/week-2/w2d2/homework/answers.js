@@ -108,12 +108,18 @@ console.log(whereIsWaldo[2][1][1]);
 
 //2
 let catChat = ['...human...why you taking pictures of me?', '...the catnip made me do it...', '...why does the red dot always get away...'];
-for (let i = 0; i < 20; i++) {
+/*for (let i = 0; i < 20; i++) {
     if (i % 2 === 0) {
         let f = (Math.floor(Math.random() *3))
         console.log(catChat[f]);
     } else {
         console.log('Love me, pet me! HSSSSSS!')
     }
-}; //I did this without looking at hints!
+}; //I did this without looking at hints!*/
 
+//Find the Median
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+//expected output: 15
+nums.sort();
+let i = Math.floor((nums.length) / 2);
+console.log(nums[i])
