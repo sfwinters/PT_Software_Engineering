@@ -89,7 +89,7 @@ console.log(favMovies)
 */
 
 //Where is Waldo
-const whereIsWaldo = [['Timmy', 'Frank'], 'Eggbert',
+/*const whereIsWaldo = [['Timmy', 'Frank'], 'Eggbert',
     ['Lucinda', 'Jacc', 'Neff', 'Snoop'],
     ['Petunia', ['Baked Goods', 'Waldo']]];
 
@@ -98,3 +98,22 @@ const whereIsWaldo = [['Timmy', 'Frank'], 'Eggbert',
 const eggStandsAlone = whereIsWaldo.splice((0, 1), 1);
 whereIsWaldo[1][2] = 'No One'
 console.log(whereIsWaldo[2][1][1]);
+*/
+
+//Excited Kitten
+//1
+//for (i = 0; i < 20; i++) {
+  //  console.log('Love me, pet me! HSSSSSS!')
+//}
+
+//2
+let catChat = ['...human...why you taking pictures of me?', '...the catnip made me do it...', '...why does the red dot always get away...'];
+for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0) {
+        let f = (Math.floor(Math.random() *3))
+        console.log(catChat[f]);
+    } else {
+        console.log('Love me, pet me! HSSSSSS!')
+    }
+}; //I did this without looking at hints!
+
