@@ -46,7 +46,7 @@ wolfy.splice(0, 1, 'Gameboy');*/
 for (const turtlePower of turtles) {
     console.log(turtlePower.toUpperCase());
 }*/
-
+/*
 //Methods, Revisited
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 //console.log(favMovies.indexOf('Titanic')); //8
@@ -86,4 +86,15 @@ const secondHalf = favMovies.slice(10, 20); //creates a new array using favMovie
 console.log(favMovies)
 //console.log(favMovies.indexOf('Fast and Furious')); //returns -1
 //using let instead of const is not necessary because arrays are considered mutable. If this were a standalone variable we would need to declare it with let in order to change it later.
+*/
 
+//Where is Waldo
+const whereIsWaldo = [['Timmy', 'Frank'], 'Eggbert',
+    ['Lucinda', 'Jacc', 'Neff', 'Snoop'],
+    ['Petunia', ['Baked Goods', 'Waldo']]];
+
+//console.log(whereIsWaldo.indexOf('Eggbert')) // 1
+//console.log(whereIsWaldo[1]); //confirmed for Eggbert
+const eggStandsAlone = whereIsWaldo.splice((0, 1), 1);
+whereIsWaldo[1][2] = 'No One'
+console.log(whereIsWaldo[2][1][1]);
