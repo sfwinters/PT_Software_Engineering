@@ -20,29 +20,38 @@ const thomsCloset = [
 //Hungry For More?
 
 //Alien Attire
-/*const kristynsShoe = kristynsCloset[0];
+const kristynsShoe = kristynsCloset[0];
 thomsCloset[2].push(kristynsShoe)
-console.log(thomsCloset)*/
+console.log(thomsCloset)
 
 //Dress Us Up
 
-
-//function testFunc (j) {
-  //  return kristynsCloset[i];
-//}
-//function findForJ(j) {
-    let i = Math.floor(Math.random() * kristynsCloset.length);
-    switch (j = 0; j < 3; j++) {
-        case 0:
-        //let i = Math.floor(Math.random() * kristynsCloset.length);
-        console.log(`Hey Kristyn, you\'re going to get arrested if you leave the house wearing only a ' + ${kristynsCloset[i]}`);
-        case 1:
-        //i = Math.floor(Math.random() * kristynsCloset.length);
-        console.log(`, + ${kristynsCloset[i]} + `);
-        case 2: {
-        //i = Math.floor(Math.random() * kristynsCloset.length);
-        console.log(`, and ${kristynsCloset[i]} + '. Buy some more dang clothes.`)
-    }
+// const kristynsItems = [];
+for (let k = 0; k <= 2; k++) {
+    kristynsItems.push(Math.floor(Math.random() * kristynsCloset.length))
 };
-//}
-console.log(j+j+j)
+let kristynsOutfit = [];
+kristynsItems.forEach(num => {
+    kristynsOutfit.push(kristynsCloset[num])
+})
+console.log('Hey Kristyn! You\'re going to get arrested if you leave the house wearing only ' + kristynsOutfit[0] + ', ' + kristynsOutfit[1] + ', and ' + kristynsOutfit[2] + '. Buy some more freaking clothes!')
+
+const thomsShirts = thomsCloset[0]
+const thomsPants = thomsCloset[1]
+const thomsStuff = thomsCloset[2]
+const thomsItems = [];
+let thomsShirt = Math.floor(Math.random() * thomsShirts.length);
+let thomsPant = Math.floor(Math.random() * thomsPants.length);
+let thomsAcc = Math.floor(Math.random() * thomsStuff.length);
+
+console.log('Thom is looking sharp in a ' + thomsShirts[thomsShirt] + ', ' + thomsPants[thomsPant] + ', and ' + thomsStuff[thomsAcc] + '.')
+
+//Dirty Laundry
+
+for (g = 0; g < kristynsCloset.length; g++){
+    console.log('WHIRR: Now washing ' + kristynsCloset[g]);
+}
+
+console.log('Shirts: ' + thomsCloset[0]);
+console.log('Pants: ' + thomsCloset[1]);
+console.log('Accessories: ' + thomsCloset[2]);
