@@ -19,15 +19,3 @@ h2 {
     color: darkgrey;
     text-align: center;
 }
-
-#articles {
-    background-color: lavender;
-    width: 300px;
-    border: 30px solid gray;
-    padding: 50px;
-    margin: 20px;
-}
-
-footer {
-    background: white;
-}
