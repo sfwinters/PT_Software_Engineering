@@ -66,5 +66,49 @@
     //4. Write code that will access your hobby from the object you just created.
     console.log(sarahWinters.hobby);
 
-    
 
+//Crazy Object!
+
+const crazyObject = {
+    taco: [
+        { meat: 'steak',
+            cheese: ['panela', 'queso', 'chihuahua']},
+        { meat: 'chicken',
+            salsa: ['pico', 'hot', 'hotter', 'really hot', 'really really hot', 'omg my mouth is burning']
+        }],
+    larry: {
+        nicknames: ['LD', 'Chicken Teriyaki Boyyyyy'],
+        quotes: ['Pretty pretty prettayyyyy good', 'Is that a Parkinson\'s thing?', 'Women love a self-confident bald man',
+        'I\'m a walking, talking enigma'],
+        characters: [
+            { name: 'Jeff',
+            occupation: 'manager'
+            },
+            { name: 'Funkhauser',
+            occupation: 'TV dude'
+            },
+            { name: 'Susie',
+            occupation: 'Jeff\'s wife',
+            favoriteHobby: 'Swearing at Larry and Jeff'
+            }]
+    }
+}
+//Use crazyObject to log the following.
+//1. 'omg my mouth is burning'
+console.log(crazyObject.taco[1].salsa[5]);
+
+//2. 'Pretty pretty prettayyyyy good'
+console.log(crazyObject.larry.quotes[0]);
+
+//3. 'Swearing at Larry and Jeff'
+console.log(crazyObject.larry.characters[2].favoriteHobby);
+
+//4. 'Chicken Teriyaki Boyyyyy'
+console.log(crazyObject.larry.nicknames[1])
+
+//5. The object that contains the name funkhauser
+console.log(crazyObject.larry.characters[1])
+
+//6. Add the quote 'I'm trying to elevate small talk to medium talk' to Larry's quote array. Confirm that it was added.
+crazyObject.larry.quotes.push('I\'m trying to elevate small talk to medium talk');
+console.log(crazyObject.larry.quotes);
