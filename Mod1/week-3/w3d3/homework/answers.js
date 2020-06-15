@@ -1,3 +1,5 @@
+//Datatypes Refresher
+
 //1.  A light switch that can be either on or off.
     //=> datatype: boolean 
     //=> data structure example: 
@@ -41,3 +43,28 @@
         { name: 'Shyle', location: 'Columbus', 'favorite tv shows': ['TV Show 4', 'TV Show 5', 'TV Show 6'] },
         { name: 'Ty', location: 'Columbus', 'favorite tv shows': ['TV Show 7', 'TV Show 8', 'TV Show 9']}
     ];
+
+
+    //Take It Easy
+
+    //1. Make an array that holds all of the colors of the rainbow.
+    const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+    //2. Write code that will access 'blue' from the rainbow array.
+    console.log(rainbow[4]);
+
+    //3. Make an object that is your name and holds the information about your favorite food, a hobby, the name of the town
+    //that you live in currently, and your favorite datatype.
+    const sarahWinters = {
+        name: 'Sarah Winters',
+        'favorite food': 'steak',
+        hobby: 'watching bad movies',
+        currentLocation: 'Columbus, Ohio',
+        favoriteDatatype: 'string'
+    }
+
+    //4. Write code that will access your hobby from the object you just created.
+    console.log(sarahWinters.hobby);
+
+    
+
