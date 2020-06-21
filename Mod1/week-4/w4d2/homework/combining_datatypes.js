@@ -129,14 +129,14 @@ const foo = () => {
 }
 foo();
 ///////////
-// const foo = ()=>{
-//     console.log('hi');
-// }
-// foo();
+const foo2 = ()=>{
+    console.log('hi');
+}
+foo2();
 
 // SyntaxError: Missing initializer in const declaration - had to add = between foo and ()
 //after fixing that, got ReferenceError: Cannot access 'foo' before initialization; moved execution after declaration to fix
-//Had to comment out the previous blocks of code in order to get it to work, because 'foo' had already been declared
+//replaced 'foo' in second code block with 'foo2' to avoid conflict with previous answer's code
 
 //Array Methods with Callbacks
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
