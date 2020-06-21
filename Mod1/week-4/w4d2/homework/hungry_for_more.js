@@ -151,8 +151,8 @@ const products = [
       },
     ]
 
-// const bargainBin = products.filter(tool => tool['price'] < 10);
-// console.log(bargainBin)
+const bargainBin = products.filter(tool => tool['price'] < 10);
+console.log(bargainBin)
 
 // sort alphabetically by product name
 let catalog = []
