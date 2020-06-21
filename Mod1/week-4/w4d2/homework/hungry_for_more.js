@@ -155,14 +155,13 @@ const products = [
 // console.log(bargainBin)
 
 // sort alphabetically by product name
-
-function thing() {
+let catalog = []
+function debbieDowner() {
     for (i = 0; i < products.length; i++) {
         let sku = products[i]['name'];
-        if (sku[0] === sku[0].toUpperCase()) {
-            return sku.toLowerCase()
-        }
+        catalog.push(sku.toLowerCase())
     }
 }
-
+debbieDowner(products)
+console.log(catalog.sort())
 
