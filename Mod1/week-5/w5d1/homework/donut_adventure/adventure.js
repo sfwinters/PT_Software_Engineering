@@ -71,8 +71,19 @@ pizzaRat.talkSmack()
 dougie.announceHealth()
 pizzaRat.announceHealth()
 
-pizzaRat.fight(dougie)
-dougie.fight(pizzaRat)
+superBattle = () => {
+    while (pizzaRat.health > 0 && dougie.health > 0) {
+        pizzaRat.fight(dougie);
+        if (dougie.health <= 0) {
+            console.log(`OMG! Pizza Rat has eaten Dougie!`);
+            return;
+        };
+        dougie.fight(pizzaRat);
+        if (pizzaRat.health <= 0) {
+            console.log(`Pizza Rat slipped in some pizza grease and died.`);
+            return;
+        }
+        }
+    }
 
-dougie.announceHealth()
-pizzaRat.announceHealth()
+superBattle();
