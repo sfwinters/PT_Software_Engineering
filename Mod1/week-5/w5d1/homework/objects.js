@@ -35,25 +35,49 @@ class Person {
         return this.weight;
     }
     greet() {
-        console.log('Hello, ' + name);
+        console.log('Hello, ' + this.name);
     }
     eat() {
-        weight += 1;
-        mood += 1;
+        this.weight += 1;
+        this.mood += 1;
     }
     exercise() {
-        weight -=1;
+        this.weight -=1;
     }
     ageUp() {
-        age +=1;
-        height +=1;
-        weight +=1;
-        mood -=1;
+        this.age +=1;
+        this.height +=1;
+        this.weight +=1;
+        this.mood -=1;
         this.bankAccount +=10;
     }
     buyHamster() {
-        this.hamsters.push(new Hamster('Gravy'));
-        mood +=1;
-        this.bankAccount -= Hamster.getPrice()
+        this.hamsters.push(gus);
+        this.mood +=1;
+        this.bankAccount -= gus.getPrice()
     }
 }
+const timmy = new Person('Timmy');
+timmy.age = 5;
+for (i = 0; i < 5; i++) {
+    timmy.eat(i)
+}
+for (i = 0; i < 5; i++) {
+    timmy.exercise(i)
+}
+for (i = 0; i < 9; i++) {
+    timmy.ageUp(i)
+}
+
+const gus = new Hamster('Gus')
+gus.owner = 'Timmy'
+timmy.buyHamster()
+for (i = 0; i < 15; i ++) {
+    timmy.ageUp()
+}
+for (i = 0; i < 2; i ++) {
+    timmy.eat();
+    timmy.exercise();
+}
+console.log(timmy)
+console.log(gus)
