@@ -68,9 +68,12 @@ console.log(pizzaRat)
 
 dougie.talkSass()
 pizzaRat.talkSmack()
+pizzaRat.fight(dougie);
+dougie.fight(pizzaRat)
 dougie.announceHealth()
 pizzaRat.announceHealth()
 
+//Hungry for More
 superBattle = () => {
     while (pizzaRat.health > 0 && dougie.health > 0) {
         pizzaRat.fight(dougie);
