@@ -19,5 +19,12 @@ $(() => {
     $($trunk).append('<li>butter beer</li>', '<li class = "secret">invisibility cloak</li>', '<li class = "secret">magic map</li>', '<li class = secret">time turner</li>', '<li class = "cat">leash</li>', '<li>Bertie Bott\'s Every Flavor Beans</li>')
     // console.log($trunk)
     $($container).append('<h5>Summer 2020</h5>');
-    
+    $wand.remove()
+    let $inventory = document.getElementsByTagName('li')
+    $inventory[0].remove()
+    $($trunk).prepend('<li>Rosewood Wand with Phoenix Feather Core</li>')
+    $inventory[0].style.color = 'green'
+    $($pet).detach()
+    $($trunk).append($pet)
+    $($house).append($pet)
 });
