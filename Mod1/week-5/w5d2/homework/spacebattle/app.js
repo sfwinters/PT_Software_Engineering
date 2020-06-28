@@ -44,16 +44,22 @@ spaceBattle = () => {
                 enemy.hullStatus();
                 if (alienFleet[5].hull <= 0) {
                     console.log(`Well done, soldier! You have defeated the alien menace. YOU WIN`);
+                    window.alert(`Well done, soldier! You have defeated the alien menace. YOU WIN`);
                     return;
                 } else if (enemy.hull <= 0) {
+                    let whatNow = window.prompt(`${enemy.name} has been destroyed! Do you want to retreat or continue?`); { 
+                        if (whatNow === 'retreat') {
+                            window.alert(`You have retreated to fight another day.`)
+                            return;
+                      }
                     // let choice;
-                    // let yes = confirm(`${alienFleet[i].name} has been destroyed! Do you want to retreat or continue?`);
+                    // let true = confirm(`${alienFleet[i].name} has been destroyed! Do you want to retreat or continue?`);
                     // if (yes == true) {
                     //     choice = "Let's do this!";
                     //     arnie.fight(alienFleet[i + 1])
                     // } else {
                     //      choice = `You have retreated to fight another day.`;
-                    // }
+                };
                 } else {
                     console.log(`The shot missed!`);
                 }; 
@@ -70,6 +76,5 @@ spaceBattle = () => {
             }
         }
     }
-}
-            
+}            
 spaceBattle();
