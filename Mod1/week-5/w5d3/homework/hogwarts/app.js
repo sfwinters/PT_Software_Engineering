@@ -13,5 +13,10 @@ $(() => {
     let $wand = $('<h4></h4>').text('Hornbeam Wand with Dragon Heartstring Core');
     $($container).append($h1, $name, $house, $pet, $wand)
     // console.log($pet)
-    document.getElementsByClassName('cat')
+    $($container).append('<ul id = \'trunk\'></ul>');
+    let $trunk = document.getElementById('trunk');
+    $trunk.setAttribute('storage', 'trunk');
+    // console.log($trunk);
+    $($trunk).append('<li>butter beer</li>', '<li class = "secret">invisibility cloak</li>', '<li class = "secret">magic map</li>', '<li class = secret">time turner</li>', '<li class = "cat">leash</li>', '<li>Bertie Bott\'s Every Flavor Beans</li>')
+    // console.log($trunk)
 });

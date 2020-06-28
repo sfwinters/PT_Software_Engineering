@@ -1,6 +1,13 @@
-body {background-color: lightcyan;
-    text-align: center;
-    };
-    
-.cat {font-family: fantasy;
-};
+body {
+    background-color: lightcyan;
+    text-align: center
+    }
+.cat {
+    font-family: fantasy;
+}
+.secret {
+    opacity: 0.5
+}
+li {
+    list-style-type: none
+}
