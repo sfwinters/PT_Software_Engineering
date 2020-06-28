@@ -16,7 +16,8 @@ $(() => {
     $($container).append('<ul id = \'trunk\'></ul>');
     let $trunk = document.getElementById('trunk');
     $trunk.setAttribute('storage', 'trunk');
-    // console.log($trunk);
     $($trunk).append('<li>butter beer</li>', '<li class = "secret">invisibility cloak</li>', '<li class = "secret">magic map</li>', '<li class = secret">time turner</li>', '<li class = "cat">leash</li>', '<li>Bertie Bott\'s Every Flavor Beans</li>')
     // console.log($trunk)
+    $($container).append('<h5>Summer 2020</h5>');
+    
 });

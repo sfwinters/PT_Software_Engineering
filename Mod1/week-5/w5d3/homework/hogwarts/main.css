@@ -1,13 +1,33 @@
 body {
     background-color: lightcyan;
-    text-align: center
+    text-align: center;
     }
 .cat {
     font-family: fantasy;
 }
 .secret {
-    opacity: 0.5
+    opacity: 0.5;
 }
 li {
-    list-style-type: none
+    list-style-type: none;
 }
+table {
+    align-content: center;
+    border: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+th {
+    border: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+td {
+    border: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
