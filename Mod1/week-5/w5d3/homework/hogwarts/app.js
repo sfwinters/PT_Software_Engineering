@@ -33,4 +33,9 @@ $(() => {
     // console.log($leash)
     $($leash).addClass('cabbage')
     $($leash).removeClass('cabbage')
+    let $h5 = document.getElementsByTagName('h5')
+    $h5[0].innerHTML = 'Fall 2020'
+    $($trunk).prepend('<li>butter beer</li>')
+    $trunk.setAttribute('storage', 'chest')
+    console.log($trunk)
 });
