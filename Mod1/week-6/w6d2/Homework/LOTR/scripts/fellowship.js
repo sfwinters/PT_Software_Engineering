@@ -122,7 +122,7 @@ const makeBaddies = () => {
   }
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 4 complete - Made the Baddies"..
 
 // ============
@@ -130,14 +130,20 @@ const makeBaddies = () => {
 // ============
 const makeBuddies = () => {
 
+  const sideBuds = document.createElement('aside');
+  document.getElementById('Mordor').appendChild(sideBuds);
   // 1. create an aside tag and append it to middle-earth below mordor
-
+  let buddyList = document.createElement('ul');
+  for (i = 0; i < buddies.length; i++){
+    let indBud = document.createElement('li');
+    indBud.innerHTML=(buddies[i]);
   // 2. display an unordered list of buddies in the aside
-
+    indBud.classList.add('buddy');
+    buddyList.append(indBud);
   // 3. give each of the buddies a class of "buddy"
-
+    sideBuds.append(buddyList);
   // 4. don't forget to append them to the aside
-
+  }
 };
 
 // COMMIT YOUR WORK
