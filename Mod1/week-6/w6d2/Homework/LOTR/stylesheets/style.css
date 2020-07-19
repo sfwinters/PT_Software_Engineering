@@ -72,7 +72,7 @@ article:nth-child(2) {
 article:nth-child(3) {
   left: 71%;
   top: 81%;
-  /*background: url(../images/eye_of_sauron.png) no-repeat;*/*/
+  /*background: url(../images/eye_of_sauron.png) no-repeat;*/
   background-position: 0em;
   background-size: 7em;
   height: 25%;
@@ -103,6 +103,13 @@ ul {
   height: 0.4em;
   display: inline-block;
   margin: auto;
+}
+
+.the-white {
+  background-color: white;
+  border: 0.14em solid grey;
+  display: inline-block;
+  padding: 3px;
 }
 
 
@@ -160,4 +167,5 @@ ul {
     top: 385px;
   }
 
+  }
 }

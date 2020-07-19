@@ -198,19 +198,20 @@ const forgeTheFellowShip = () => {
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
 
 // ============
 // Chapter 9
 // ============
 const theBalrog = () => {
-
+  const gandalf = (document.getElementsByClassName('buddy')[0]);
+  gandalf.innerHTML='Gandalf the White';
   // 1. change the 'Gandalf' text to 'Gandalf the White'
-
+  gandalf.classList.add('the-white')
   // 2. add a class "the-white" to this element
 
-  // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
+  // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border **done**
 
 };
 
