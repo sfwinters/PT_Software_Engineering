@@ -93,6 +93,7 @@ const makeHobbits = () => {
 const keepItSecretKeepItSafe = () => {
   const ringDiv = document.createElement('div')
   ringDiv.setAttribute('id', 'the-ring')
+  ringDiv.classList.add('magic-imbued-jewelry')
   // 1. create an empty div with an id of 'the-ring'
   let frodoBags = document.getElementsByClassName('hobbit')[0]
   frodoBags.appendChild(ringDiv)
@@ -280,16 +281,20 @@ const weWantsIt = () => {
 // Chapter 13
 // ============
 const thereAndBackAgain = () => {
-
+  document.getElementById('gollum').remove()
   // 1. remove Gollum and the Ring from the DOM
-
+  document.getElementsByTagName('ul')[0].remove();
   // 2. remove all the baddies from the DOM
-
+  const shire = document.getElementById('The-Shire');
+  const frodo = (document.getElementsByClassName('hobbit')[0]);
+  const sam = (document.getElementsByClassName('hobbit')[1]);
+  shire.append(document.getElementsByTagName('ul')[0], frodo, sam);
+  
   // 3. Move all the hobbits back to the shire
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 13 complete -Gollum and the ring are gone, the baddies are done, and the hobbits are back in the shire".
 
 
