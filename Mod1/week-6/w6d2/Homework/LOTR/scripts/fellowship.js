@@ -84,16 +84,17 @@ const makeHobbits = () => {
   
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 2 complete - Made the Hobbits".
 
 // ============
 // Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
-
+  const ringDiv = document.createElement('div')
   // 1. create an empty div with an id of 'the-ring'
-
+  let frodoBags = document.getElementsByClassName('hobbit')[0]
+  frodoBags.appendChild(ringDiv)
   // 2. add the ring as a child of Frodo
     // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
 
