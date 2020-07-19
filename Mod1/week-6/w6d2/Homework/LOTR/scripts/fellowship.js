@@ -102,20 +102,24 @@ const keepItSecretKeepItSafe = () => {
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
 
 // ============
 // Chapter 4
 // ============
 const makeBaddies = () => {
-
+  let baddyList = document.createElement('ul');
   // 1. display an unordered list of baddies in Mordor
-
+  for (i = 0; i < baddies.length; i++) {
+    let indBaddy = document.createElement('li');
+    indBaddy.innerHTML=(baddies[i])
+    indBaddy.setAttribute('class', 'baddy');
+    baddyList.append(indBaddy);
   // 2. give each of the baddies a class of "baddy"
-
+    document.getElementById('Mordor').append(baddyList)
   // 3. remember to append the ul to Mordor
-
+  }
 };
 
 // COMMIT YOUR WORK
