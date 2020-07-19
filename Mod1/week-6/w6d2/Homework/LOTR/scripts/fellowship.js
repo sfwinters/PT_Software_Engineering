@@ -51,14 +51,14 @@ const makeMiddleEarth = () => {
   //   3a. creates an article tag (there should be one for each land when the loop is done)
     landArt.setAttribute('id', lands[i]);
   //   3b. gives each land article an `id` tag of the corresponding land name
-    const landName = landArt.innerHTML=('<h1>' + lands[i] + '</h1>')
+    landArt.innerHTML=('<h1>' + lands[i] + '</h1>')
   //   3c. includes an h1 with the name of the land inside each land article
     mE.appendChild(landArt);
   //   3d. appends each land to the middle-earth section
   }
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
 
 // ============
@@ -67,17 +67,21 @@ const makeMiddleEarth = () => {
 const makeHobbits = () => {
 
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
-
+  let hobbitList = document.createElement('ul');
   // 1. create a 'ul'
-
+  for (i = 0; i < hobbits.length; i++) {
+    let indHobbit = document.createElement('li');
+    indHobbit.innerHTML=(hobbits[i]);
+    hobbitList.appendChild(indHobbit);
   // 2. make each hobbit an li element and append it to the 'ul' you just created
     // hint: use the given 'hobbits' array and use a for loop
-
+    indHobbit.setAttribute('class', 'hobbit');
+  }
   // 3. also, give each hobbit (`li`) a class of "hobbit"
-
+  document.getElementById('The-Shire').append(hobbitList)
   // 4. append the ul to the shire
     // hint: get 'The-Shire' by using its id
-
+  
 };
 
 // COMMIT YOUR WORK
