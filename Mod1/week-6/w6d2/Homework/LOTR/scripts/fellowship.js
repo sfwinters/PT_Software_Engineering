@@ -146,7 +146,7 @@ const makeBuddies = () => {
   }
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 5 complete - Made the Buddies".
 
 // ============
@@ -156,7 +156,8 @@ const makeBuddies = () => {
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
-
+  const bandOfHobs = document.getElementById('The-Shire').childNodes[1];
+  document.getElementById('Rivendell').append(bandOfHobs)
 };
 
 // COMMIT YOUR WORK
