@@ -160,14 +160,15 @@ const leaveTheShire = () => {
   document.getElementById('Rivendell').append(bandOfHobs)
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 6 complete - Left the Shire"
 
 // ============
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
+  const whoDis = (document.getElementsByClassName('buddy')[3])
+  whoDis.innerText='Aragorn'
   // 1. change the buddy 'Strider' textnode to "Aragorn"
      // hint: You can get a list of elements by tag name, such as 'aside'
 
