@@ -92,6 +92,7 @@ const makeHobbits = () => {
 // ============
 const keepItSecretKeepItSafe = () => {
   const ringDiv = document.createElement('div')
+  ringDiv.setAttribute('id', 'the-ring')
   // 1. create an empty div with an id of 'the-ring'
   let frodoBags = document.getElementsByClassName('hobbit')[0]
   frodoBags.appendChild(ringDiv)
@@ -244,27 +245,32 @@ const itsDangerousToGoAlone = () => {
   const sam = (document.getElementsByClassName('hobbit')[1]);
   mordor.append(frodo, sam);
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
-  const morDiv = document.createElement('div');
+  const morDiv = document.createElement('div')
   morDiv.setAttribute('id', 'mount-doom');
-  mordor.prepend(morDiv)
+  morDiv.append(document.createElement('h1').innerHTML="Mount Doom")
+  mordor.append(morDiv)
   // 2. add a div with an id of 'mount-doom' to Mordor
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
 
 // ============
 // Chapter 12
 // ============
 const weWantsIt = () => {
-
+  const golDiv = document.createElement('div');
+  golDiv.setAttribute('id', 'gollum');
+  const gollum = document.createElement('h2').innerHTML='Gollum';
+  golDiv.append(gollum)
+  document.getElementById('Mordor').append(golDiv);
   // 1. Create a div with an id of 'gollum' and add it to Mordor
-
+  const theRing = document.getElementById('the-ring');
+  document.getElementById('gollum').appendChild(theRing);
   // 2. Move the ring from Frodo and give it to Gollum
-
+  document.getElementById('mount-doom').appendChild(golDiv);
   // 3. Move Gollum into Mount Doom
-
 };
 
 // COMMIT YOUR WORK
