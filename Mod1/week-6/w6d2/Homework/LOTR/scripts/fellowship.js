@@ -174,20 +174,26 @@ const beautifulStranger = () => {
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
 
 // ============
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
-
+  const fellowDiv = document.createElement('div');
+  fellowDiv.setAttribute('id', 'the-fellowship');
   // 1. create a new div with an id 'the-fellowship'
-
+  const fellowTitle = document.createElement('h1');
+  fellowTitle.innerText='The Fellowship'
+  fellowDiv.appendChild(fellowTitle)
   // 2. add an h1 with the text 'The Fellowship' to this new div
-
+  document.getElementById('middle-earth').append(fellowDiv)
   // 3. append the fellowship to middle-earth
-
+  const bandOfHobs = document.getElementsByTagName('ul')[0];
+  const sideBuds = document.getElementsByTagName('ul')[2];
+  fellowDiv.append(bandOfHobs);
+  fellowDiv.append(sideBuds);
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
 
 };
