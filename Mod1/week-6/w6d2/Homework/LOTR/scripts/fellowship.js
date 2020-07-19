@@ -239,9 +239,14 @@ const hornOfGondor = () => {
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
-
+  const mordor = document.getElementById('Mordor');
+  const frodo = (document.getElementsByClassName('hobbit')[0]);
+  const sam = (document.getElementsByClassName('hobbit')[1]);
+  mordor.append(frodo, sam);
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
-
+  const morDiv = document.createElement('div');
+  morDiv.setAttribute('id', 'mount-doom');
+  mordor.prepend(morDiv)
   // 2. add a div with an id of 'mount-doom' to Mordor
 
 };
