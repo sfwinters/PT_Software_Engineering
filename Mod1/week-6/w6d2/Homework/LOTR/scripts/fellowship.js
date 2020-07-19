@@ -215,18 +215,19 @@ const theBalrog = () => {
 
 };
 
-// COMMIT YOUR WORK
+// COMMIT YOUR WORK **done**
 // The commit message should read: "Chapter 9 complete - Updated Gandalf"
 
 // ============
 // Chapter 10
 // ============
 const hornOfGondor = () => {
-
+  alert('The horn of Gondor has been blown!')
   // 1. create a pop-up alert that the horn of gondor has been blown
-
+  const boromir = document.getElementsByClassName('buddy')[4];
+  boromir.innerHTML="<strike>Boromir</strike>"
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+  document.getElementsByClassName('baddy')[2].remove()
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
 
 };
