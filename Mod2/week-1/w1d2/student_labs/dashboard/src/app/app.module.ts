@@ -8,6 +8,7 @@ import { AvgRatingComponent } from './avg-rating/avg-rating.component';
 import { VisitorsComponent } from './visitors/visitors.component';
 import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analysis.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,7 @@ import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analy
     ReviewsComponent,
     AvgRatingComponent,
     VisitorsComponent,
-    SentimentAnalysisComponent
+    SentimentAnalysisComponent,
   ],
   imports: [
     BrowserModule

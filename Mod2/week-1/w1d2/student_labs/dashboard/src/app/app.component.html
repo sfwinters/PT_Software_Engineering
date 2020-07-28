@@ -1,8 +1,30 @@
-<h1>dashboard lol</h1>
-<body>
-<app-avg-rating></app-avg-rating>
-<app-reviews></app-reviews>
-<app-sentiment-analysis></app-sentiment-analysis>
-<app-sidebar></app-sidebar>
-<app-visitors> </app-visitors>
-</body>
+<div class="container-fluid">
+    <div class="sidebar">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="main">
+        <div class="grid">
+            <div class="row">
+                <div class="col-md-4">
+                    <app-avg-rating></app-avg-rating>
+                </div>
+                <div class="col-md-4">
+                    <app-reviews></app-reviews>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <app-sentiment-analysis></app-sentiment-analysis>
+                </div>
+                <div class="col-md-4">
+                    <app-visitors></app-visitors>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>         
+           
+            
+            
+            
+            
