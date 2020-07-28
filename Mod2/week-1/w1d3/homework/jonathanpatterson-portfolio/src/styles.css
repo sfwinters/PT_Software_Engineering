@@ -1,12 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-.img-responsive, .photo {
+.grid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+.photo {
     display: flex;
+    padding: 25px;
+    align-content: center;
     justify-content: center;
     max-width: 300px;
     max-height: 300px;
+    font-size: larger;
+    color: white;
+}
+
+.img-responsive {
+    display: flex;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+    color: white;
 }
 
 .name, .rule, .summary {
-    font-family: fantasy;
-    
+    justify-content: center;
+    color: white;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    justify-content: center;
+    color: white;
 }
