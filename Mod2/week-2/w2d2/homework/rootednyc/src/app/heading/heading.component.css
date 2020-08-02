@@ -1,0 +1,33 @@
+span {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+}
+
+.header {
+    background-color: #C6FF00;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    max-height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menuitem {
+    display: inline-block;
+}
+
+.rootedimg {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    max-height: 40px;
+}
+
+.menu {
+    min-height: 80px;
+}
+

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'gt_walsheimlight';
+    src: url('../../assets/fonts/gt-walsheim-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'gt_walsheimmedium';
+    src: url('../../assets/fonts/gt-walsheim-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'gt_walsheimregular';
+    src: url('../../assets/fonts/gt-walsheim-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+.tagline {
+    font-family: 'gt_walsheimmedium';
+    font-size: 31px;
+    color: white;
+    margin-top: 182px;
+    text-align: center;
+}

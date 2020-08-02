@@ -1,0 +1,7 @@
+.salesinfo {
+    background-color: #5BD51F;
+    color: white;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+}
