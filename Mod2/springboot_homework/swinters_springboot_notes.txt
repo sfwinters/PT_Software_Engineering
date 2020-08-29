@@ -1,0 +1,25 @@
+*************************************
+From now until the next time our class meets. You will read and research all of the concepts within the links below so that you could learn the theory from Springboot such as
+
+Take some notes on these concepts and submit the file with the notes however you wish
+
+1) Inversion of Control
+2) Dependency Injection
+3) The MVC pattern
+4) Spring Profiles
+**************************************
+
+**Inversion of Control**
+This essentially means that the flow control of a program is automated rather than having to be specified from start to finish by the programmer.
+
+
+**Dependency Injection**
+This is included in IOC. Parts of code are dependent on "dependencies," things such as databases and logs that are required for programs to work. Springboot handles the relationships between the code blocks and these items so that the developer does not have to do it "by hand."
+
+
+**The MVC pattern**
+MVC stands for "model, view, controller" and is a concept that describes how an application (or any project) can be organized. "Model" describes the materials or ingredients that go into the application: data, components, etc. "View" means anything that the end user directly interacts with: the GUI, for example, or any other components that make the resulting application look a certain way. "Controller" is the part (or group of parts) that bridges the two together and makes everything work, for example, the dependencies mentioned earlier.
+
+
+**Spring Profiles**
+Spring Profiles are a way to keep different parts of your code independent of one another. Certain components should only be able to access and affect other certain components (both for efficiency and for security reasons). Profiles provide a built-in way to ensure that they can be kept separated as needed.
